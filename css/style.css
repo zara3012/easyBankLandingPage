@@ -1,0 +1,323 @@
+@import url("https://fonts.googleapis.com/css?family=Public+Sans&display=swap");
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: Public Sans;
+}
+.logo{
+  margin-top: -5px;
+}
+.navig {
+    background-color: #fff;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    padding: 0px;
+    margin: 2px;
+    -webkit-box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+    z-index: 2;
+    margin-bottom: -10px;
+    
+  }
+  
+  
+  .menunav {
+    list-style: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    text-align: center;
+    margin-right: 7rem;
+    overflow: hidden;
+  }
+  
+ .menuitem {
+    margin: 20px 20px;
+    display: inline-block;
+  }
+  .menulink {
+    text-decoration: none;
+    color: #9698a6;
+  }
+  
+  .menulink:hover {
+    color: #2d314d;
+  }
+  .menulink:hover::after {
+    -webkit-transform: translateY(-15px);
+        transform: translateY(-15px);
+    top: 4.7rem;
+    opacity: 1;
+    -webkit-transition: 0.3s;
+  }
+  .menubut {
+    height: 2.5rem;
+    margin: 12px 0 12px 0;
+    font-size: 15px;
+    border: none;
+    color: #fff;
+    border-radius: 25px;
+    padding: 5px 20px 5px 20px;
+    
+    
+    cursor: pointer;
+    outline: none;
+    -webkit-box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+  }
+
+  .nav {
+    display: none;
+  }
+  /* end of navigation */
+
+
+
+  /* introduction */
+  .intro {
+    
+    display: flex;
+    
+    overflow: hidden;
+
+  }
+  .introimg image{
+    margin-top: 5%;
+  }
+  .introimg{
+    background-image: url(../img/bg-intro-desktop.svg.png);
+    background-repeat: no-repeat;
+    margin-top: 5%;
+    
+    position: relative;
+  }
+  .introtext {
+    color: #2d314d;
+    margin: 0 0 0 2rem;
+    margin-left: 20%;
+  }
+
+  
+  .introtext h1 {
+    font-size: 4rem;
+    margin: 0 2rem 0.5rem;
+    font-weight: 300;
+  }
+  .introtext p{
+    margin: 0 2rem 0.5rem;
+
+  }
+  .butt{
+    margin: 0 2rem 0.5rem;
+    
+    background-color:greenyellow;
+    border: none;
+    color: black;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 16px;
+      }
+
+/* end of introduction */
+
+/* choose */
+
+.service{
+  display: inline-flex;
+}
+
+.servtext p{
+  font-size: x-small;
+  text-align: center;
+  flex-wrap: wrap;
+  font-size: 0.9rem;
+
+}
+.servtext h4{
+  font-size: smaller;
+  text-align: center;
+  flex-wrap: wrap;
+  margin: 20px 0 10px;
+  font-weight: bold;
+}
+/* .serv img{
+  margin-left:25%;
+} */
+
+/* end of choose */
+
+/* article */
+.art-text{
+  font-weight: bolder;
+}
+.art{
+  display: inline-flex;
+  
+}
+.card{
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+}
+/* end of article */
+
+
+/* footer */
+footer{
+  background: #2d314d;
+  padding: 4rem 4rem 0 4rem;
+  color: #fff;
+  align-items: stretch;
+}
+
+.footicon_list li {
+  margin: 5px;
+  cursor: pointer;
+  text-decoration: none;
+
+}
+.footicon_list li:hover {
+  color: #31d35c;
+  
+}
+.new{
+  margin-left: 50%;
+}
+
+
+.button{
+  margin-left: 15%;
+}
+/* End of footer */
+
+
+@media screen and (max-width: 768px) {
+  .navig {
+    display: none;
+  }
+  .nav {
+    display: block;
+    width: 100vw;
+  }
+  .nav .close {
+    background-color: #fff;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    padding: 1rem;
+    -webkit-box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+    z-index: 2;
+  }
+  .nav .close .menu {
+    cursor: pointer;
+  }
+  .nav .close .menu .bopen.show {
+    display: none;
+  }
+  .nav .close .menu .bclose {
+    display: none;
+  }
+  .nav .close .menu .bclose.open {
+    display: block;
+  }
+  .nav .menunav {
+    background: #fff;
+    -webkit-box-shadow: 0 3px 5px rgba(0, 0, 1, 0.4);
+            box-shadow: 0 3px 5px rgba(0, 0, 1, 0.4);
+    text-align: center;
+    padding: 2rem 4rem 2rem 4rem;
+    position: absolute;
+    left: 3rem;
+    right: 3rem;
+    top: 5rem;
+    display: none;
+  }
+  .nav .menuitem {
+    list-style: none;
+    margin: 10px;
+  }
+  .nav .menulink {
+    text-decoration: none;
+    outline: none;
+    color: #2d314d;
+  }
+  /* end of nav */
+  .intro {
+    background: url("../images/bg-intro-mobile.svg");
+    background-repeat: no-repeat;
+    background-size: 100vw;
+    background-position: right top;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100vw;
+  }
+  .introtext h1 {
+    font-size: 1.5rem;
+  }
+  .introimg img {
+    margin: 0 2rem;
+  }
+  /* end of intro */
+  .choose .main {
+    text-align: center;
+  }
+  .choose .main .text-secondary {
+    text-align: center;
+  }
+  .main .services {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+
+/* end of choose */
+
+/* footer */
+footer .row .footicon_list .new {
+  margin-left: 2rem;
+}
+footer .row .menubut {
+  margin-top: 10rem;
+}
+}
